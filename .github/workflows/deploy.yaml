@@ -2,7 +2,7 @@ name: CI/CD to K8s
 
 on:
   push:
-    branches: [ main ]   # 当推送到 main 分支时触发
+    branches: [ master ]   # 当推送到 main 分支时触发
 
 env:
   DOCKER_IMAGE: ${{ secrets.DOCKER_USERNAME }}/go-cicd-demo

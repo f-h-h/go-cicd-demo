@@ -32,7 +32,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
+          tags: | 
             ${{ env.DOCKER_IMAGE }}:latest
             ${{ env.DOCKER_IMAGE }}:${{ steps.version.outputs.tag }}
 
